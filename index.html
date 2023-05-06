@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Faça um Gol</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body class="body_background" onload="load_img()">
+	<center>
+		<h3 id="hd3">Faça um Gol</h3>
+		<canvas width="750" height="500" id="myCanvas"></canvas>
+
+	</center>
+	<script src="main.js"></script>
+
+	function_up(){
+		if(ball_y >=5){
+			ball_y = ball_y = block_image_height;
+			console.log("altura da imagem do bloco = " + block_image_height);
+			console.log("Quando a tecla para cima é pressionada, X = ” +ball_x+",Y-"ball_y);
+			canvas.remove(ball_obj);
+			new image();
+		}
+}
+
+	function down(){
+		if(ball_y >-450){
+			ball_y = ball_y + block_image_height;
+			console.log("altura da imagem do bloco = " + block_image_heigh);
+			console.log("Quando a tecla para baixo é pressionada, X = "+ball_x+",Y-"ball_y);
+			canvas.remove(ball_obj);
+			new_image();
+		}
+}
+	
+	function left(){
+		if(ball_x >5){
+			ball_x = ball_x - block_image_width;
+			console.log("largura da imagem do bloco = " + block_image_width);
+			console.log("Quando a tecla esquerda é pressionada, x = "+ball_x+",Y-"ball_y);
+			canvas.remove(ball_obj);
+			new_image();
+		}
+}
+
+	function right(){
+		if(ball_x >-1050){
+			ball_x = ball-x + block_]image_width;
+			console.log("largura da imagem do bloco = " + block_image_width);
+			console.log("Quando a tecla direita é pressionada, X = " +ball_x+",Y-":ball_y);
+			canvas . remove(ball_obj);
+			new_image();
+		}
+}
+	
+</body>
+</html>
